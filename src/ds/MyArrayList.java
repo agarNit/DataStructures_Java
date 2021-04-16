@@ -86,8 +86,8 @@ public class MyArrayList {
         array[index] = data;
     }
 
-    public void print(int start, int end) {
-        for(int i= start;i<end;i++) {
+    public void printArray() {
+        for(int i= 0;i< length;i++) {
             System.out.print(this.get(i) + " ");
         }
     }
