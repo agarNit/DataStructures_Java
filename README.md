@@ -1,2 +1,2 @@
 # DataStructures_Java
-Data Structures Implementation in Java
+My implementations for popular data structures using Java language.
