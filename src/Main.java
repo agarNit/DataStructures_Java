@@ -1,8 +1,5 @@
 
-import ds.MyArrayList;
-import ds.MyLinkedList;
-
-import java.sql.SQLOutput;
+import ds.*;
 
 public class Main {
 
@@ -59,7 +56,7 @@ public class Main {
         list.removeAtHead();
         list.printlist();
         System.out.println();
-
+        System.out.println( list.size());
     }
 
 }
