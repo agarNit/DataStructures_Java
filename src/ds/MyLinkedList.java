@@ -136,7 +136,7 @@ public class MyLinkedList {
 
     }
 
-    public void printlist(){
+    public void printList(){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data + " ");

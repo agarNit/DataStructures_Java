@@ -1,6 +1,5 @@
 package ds;
 
-
 public class MyArrayStack {
     MyArrayList stack;
 
