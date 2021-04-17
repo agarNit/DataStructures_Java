@@ -13,6 +13,10 @@ public class Main {
         System.out.println("LinkedList Implementation starts");
         testMyLinkedList();
         System.out.println("LinkedList Implementation ends");
+        System.out.println();
+        System.out.println("MyArrayStack Implementation starts");
+        testMyArrayStack();
+        System.out.println("MyArrayStack Implementation ends");
     }
 
     public static void testMyArrayList () throws Exception {
@@ -58,5 +62,23 @@ public class Main {
         System.out.println();
         System.out.println( list.size());
     }
+
+    public static void testMyArrayStack() throws Exception {
+       MyArrayStack sa  = new MyArrayStack();
+       System.out.println(sa.isEmpty());
+       sa.add(1);
+       sa.add(2);
+       sa.add(3);
+       sa.add(4);
+       sa.add(5);
+       sa.printStack();
+       System.out.println();
+       sa.pop();
+       sa.printStack();
+       System.out.println();
+       System.out.println(sa.peek());
+       System.out.println(sa.size());
+    }
+
 
 }
