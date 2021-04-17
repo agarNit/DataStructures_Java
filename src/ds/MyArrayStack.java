@@ -20,7 +20,7 @@ public class MyArrayStack {
         return stack.size() == 0;
     }
 
-    public void add(Integer data){
+    public void push(Integer data){
         stack.add(data);
     }
 

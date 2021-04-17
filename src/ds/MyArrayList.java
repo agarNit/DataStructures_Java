@@ -4,6 +4,7 @@ public class MyArrayList {
     private Integer[] array;
     private int length;
     private int capacity;
+
     public MyArrayList() throws Exception {
         this(16);
     }

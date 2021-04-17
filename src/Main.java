@@ -19,7 +19,7 @@ public class Main {
         System.out.println("MyArrayStack Implementation ends");
     }
 
-    public static void testMyArrayList () throws Exception {
+    public static void testMyArrayList() throws Exception {
         MyArrayList arr = new MyArrayList();
         System.out.println(arr.isEmpty());
         arr.add(1);
@@ -66,11 +66,11 @@ public class Main {
     public static void testMyArrayStack() throws Exception {
        MyArrayStack sa  = new MyArrayStack();
        System.out.println(sa.isEmpty());
-       sa.add(1);
-       sa.add(2);
-       sa.add(3);
-       sa.add(4);
-       sa.add(5);
+       sa.push(1);
+       sa.push(2);
+       sa.push(3);
+       sa.push(4);
+       sa.push(5);
        sa.printStack();
        System.out.println();
        sa.pop();
@@ -79,6 +79,4 @@ public class Main {
        System.out.println(sa.peek());
        System.out.println(sa.size());
     }
-
-
 }
