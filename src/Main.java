@@ -25,6 +25,10 @@ public class Main {
         System.out.println("MyArrayQueue Implementation starts");
         testMyArrayQueue();
         System.out.println("MyArrayQueue Implementation ends");
+        System.out.println();
+        System.out.println("MyLinkedListQueue Implementation starts");
+        testMyLinkedListQueue();
+        System.out.println("MyLinkedListQueue Implementation ends");
     }
 
     public static void testMyArrayList() throws Exception {
@@ -106,19 +110,36 @@ public class Main {
     }
 
     public static void testMyArrayQueue() throws Exception{
-        MyArrayQueue aq = new MyArrayQueue();
-        System.out.println(aq.isEmpty());
-        aq.enQueue(1);
-        aq.enQueue(2);
-        aq.enQueue(3);
-        aq.enQueue(4);
-        aq.enQueue(5);
-        aq.printQueue();
+        MyArrayQueue qa = new MyArrayQueue();
+        System.out.println(qa.isEmpty());
+        qa.enQueue(1);
+        qa.enQueue(2);
+        qa.enQueue(3);
+        qa.enQueue(4);
+        qa.enQueue(5);
+        qa.printQueue();
         System.out.println();
-        System.out.println(aq.deQueue());
-        aq.printQueue();
+        System.out.println(qa.deQueue());
+        qa.printQueue();
         System.out.println();
-        System.out.println(aq.peek());
-        System.out.println(aq.size());
+        System.out.println(qa.peek());
+        System.out.println(qa.size());
+    }
+
+    public static void testMyLinkedListQueue() throws Exception{
+        MyLinkedListQueue ql = new MyLinkedListQueue();
+        System.out.println(ql.isEmpty());
+        ql.enQueue(1);
+        ql.enQueue(2);
+        ql.enQueue(3);
+        ql.enQueue(4);
+        ql.enQueue(5);
+        ql.printQueue();
+        System.out.println();
+        System.out.println(ql.deQueue());
+        ql.printQueue();
+        System.out.println();
+        System.out.println(ql.peek());
+        System.out.println(ql.size());
     }
 }
