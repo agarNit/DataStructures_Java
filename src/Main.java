@@ -21,6 +21,10 @@ public class Main {
         System.out.println("MyLinkedListStack Implementation starts");
         testMyLinkedListStack();
         System.out.println("MyLinkedListStack Implementation ends");
+        System.out.println();
+        System.out.println("MyArrayQueue Implementation starts");
+        testMyArrayQueue();
+        System.out.println("MyArrayQueue Implementation ends");
     }
 
     public static void testMyArrayList() throws Exception {
@@ -99,5 +103,22 @@ public class Main {
         System.out.println();
         System.out.println(sl.peek());
         System.out.println(sl.size());
+    }
+
+    public static void testMyArrayQueue() throws Exception{
+        MyArrayQueue aq = new MyArrayQueue();
+        System.out.println(aq.isEmpty());
+        aq.enQueue(1);
+        aq.enQueue(2);
+        aq.enQueue(3);
+        aq.enQueue(4);
+        aq.enQueue(5);
+        aq.printQueue();
+        System.out.println();
+        System.out.println(aq.deQueue());
+        aq.printQueue();
+        System.out.println();
+        System.out.println(aq.peek());
+        System.out.println(aq.size());
     }
 }
