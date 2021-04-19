@@ -15,7 +15,7 @@ public class MyLinkedListQueue {
     }
 
     public Integer peek() throws Exception {
-        return queue.get(queue.size());
+        return queue.get(1);
     }
 
     public Integer deQueue() throws Exception {
