@@ -29,6 +29,10 @@ public class Main {
         System.out.println("MyLinkedListQueue Implementation starts");
         testMyLinkedListQueue();
         System.out.println("MyLinkedListQueue Implementation ends");
+        System.out.println();
+        System.out.println("MyHeap Implementation starts");
+        testMyHeap();
+        System.out.println("MyHeap Implementation ends");
     }
 
     public static void testMyArrayList() throws Exception {
@@ -141,5 +145,24 @@ public class Main {
         System.out.println();
         System.out.println(ql.peek());
         System.out.println(ql.size());
+    }
+
+    public static void testMyHeap() throws Exception {
+        MyHeap heap = new MyHeap();
+        System.out.println(heap.isEmpty());
+        heap.insert(10);
+        heap.insert(4);
+        heap.insert(9);
+        heap.insert(1);
+        heap.insert(7);
+        heap.insert(5);
+        heap.insert(3);
+        heap.printHeap();
+        System.out.println();
+        System.out.println(heap.max());
+        System.out.println(heap.maxChild(1));
+        System.out.println(heap.min());
+        System.out.println(heap.size());
+
     }
 }
