@@ -159,9 +159,16 @@ public class Main {
         heap.insert(3);
         heap.printHeap();
         System.out.println();
+        heap.remove(1);
+        heap.printHeap();
+        System.out.println();
+        heap.insert(11);
+        heap.printHeap();
+        System.out.println();
         System.out.println(heap.max());
         System.out.println(heap.maxChild(1));
         System.out.println(heap.min());
+        System.out.println(heap.kthChild(1,2));
         System.out.println(heap.size());
 
     }

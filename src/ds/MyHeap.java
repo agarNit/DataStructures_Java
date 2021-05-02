@@ -30,6 +30,7 @@ public class MyHeap {
     }
 
     public int kthChild(int i,int k){
+
         return 2*i + k;
     }
 
@@ -41,16 +42,18 @@ public class MyHeap {
     public void remove(int index) throws Exception {
         if (isEmpty())
             throw new Exception("IndexOutOfBounds");
-        int key = heap[index];
-        heap[index] = heap[size--];
+        heap[index] = heap[size-1];
         size--;
-        heapifyDown(size);
+        heapifyDown(index);
     }
 
     public void heapifyUp(int index){
         int temp = heap[index];
         while(index>0 && temp > heap[parent(index)]){
-            heap[index] = heap[parent(index)];
+            int temp1 = heap[parent(index)];
+            int temp2 = heap[index];
+            heap[parent(index)] = temp2;
+            heap[index] = temp1;
             index = parent(index);
         }
         heap[index] = temp;

@@ -27,4 +27,7 @@ public class MyLinkedListQueue {
     public void printQueue(){
         queue.printList();
     }
+
+    public void remove(int i) {
+    }
 }
