@@ -1,16 +1,16 @@
 package ds;
 
-public class UnionFind {
+public class MyUnionFind {
     private int size;
     private int numset;
     private int[] sz;
     private int[] id;
 
-    public UnionFind() throws Exception {
+    public MyUnionFind() throws Exception {
         this(10);
     }
 
-    public UnionFind(int size) throws Exception {
+    public MyUnionFind(int size) throws Exception {
         if(size<=0)
             throw new Exception("IndexOutOfBoundsException");
         this.size = size;

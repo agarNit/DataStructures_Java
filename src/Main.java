@@ -177,7 +177,7 @@ public class Main {
     }
 
     public static void testMyUnionFind() throws Exception {
-        UnionFind uf = new UnionFind(6);
+        MyUnionFind uf = new MyUnionFind(6);
         System.out.println(uf.isEmpty());
         uf.insert(0,1);
         uf.insert(1,3);
