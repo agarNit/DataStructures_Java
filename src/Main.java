@@ -33,6 +33,10 @@ public class Main {
         System.out.println("MyHeap Implementation starts");
         testMyHeap();
         System.out.println("MyHeap Implementation ends");
+        System.out.println();
+        System.out.println("UnionFind Implementation starts");
+        testMyUnionFind();
+        System.out.println("UnionFind Implementation ends");
     }
 
     public static void testMyArrayList() throws Exception {
@@ -170,6 +174,23 @@ public class Main {
         System.out.println(heap.min());
         System.out.println(heap.kthChild(1,2));
         System.out.println(heap.size());
+    }
 
+    public static void testMyUnionFind() throws Exception {
+        UnionFind uf = new UnionFind(6);
+        System.out.println(uf.isEmpty());
+        uf.insert(0,1);
+        uf.insert(1,3);
+        uf.insert(2,5);
+        uf.insert(3,7);
+        uf.insert(4,9);
+        uf.insert(5,11);
+        uf.printUnion();
+        System.out.println();
+        System.out.println(uf.getComp());
+        uf.unify(3,5);
+        System.out.println(uf.getComp());
+        System.out.println(uf.find(3));
+        System.out.println(uf.connected(3,5));
     }
 }
